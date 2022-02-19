@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import implant from "./assets/implant.svg";
+import tooth from "./assets/tooth.svg";
+import abutment from "./assets/abutment.svg";
+import screw from "./assets/screw.svg";
 
 function App() {
+  const [isShowComponents, setIsShowComponents] = useState(false);
+  const toggleShowComponents = () => {
+    setIsShowComponents(!isShowComponents);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="App-header">Tooth Implant</header>
+      <div>
+        {!isShowComponents && (
+          <div onClick={toggleShowComponents}>
+            <img src={implant} alt="implant" />
+          </div>
+        )}
+        {isShowComponents && (
+          <div onClick={toggleShowComponents}>
+            <div>
+              <img src={tooth} alt="tooth" />
+            </div>
+            <div className="abutment">
+              <img src={abutment} alt="abutment" />
+            </div>
+            <div>
+              <img src={screw} alt="screw" />
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
