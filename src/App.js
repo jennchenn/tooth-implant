@@ -47,13 +47,13 @@ function App() {
       <header className="subheader">Components</header>
       <div className="spacer10" />
       <div>
-        {scrollPosition < 100 && (
+        {scrollPosition < 150 && (
           // {(scrollPosition < 100 || scrollPosition > 500) && (
           <div onClick={toggleShowComponents}>
             <img src={implant} alt="implant" />
           </div>
         )}
-        {scrollPosition > 100 && (
+        {scrollPosition > 150 && (
           // {scrollPosition > 100 && scrollPosition < 500 && (
           <div onClick={toggleShowComponents}>
             <div
