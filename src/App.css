@@ -5,6 +5,7 @@
   text-align: center;
   padding: 40px;
   background-color: #d0f0c0;
+  overflow: auto;
 }
 
 body {
@@ -101,4 +102,25 @@ header {
   animation: bounce 1s ease;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.components {
+  margin-left: 150px;
+}
+
+.marginLeft10 {
+  margin-left: 10px;
+}
+
+.marginRight10 {
+  margin-right: 10px;
 }

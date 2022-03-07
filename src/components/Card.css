@@ -1,0 +1,19 @@
+.card {
+  outline: 2px solid grey;
+  border-radius: 70pt;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.image {
+  height: 60px;
+  width: 60px;
+  margin-left: 15px;
+}
+
+.text {
+  margin-left: 30px;
+  text-align: left;
+}
