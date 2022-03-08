@@ -8,6 +8,7 @@ import brushing from "./assets/brushing.png";
 import flossing from "./assets/flossing.png";
 import mouthguard from "./assets/mouthguard.png";
 import dentist from "./assets/dentist.png";
+import failure from "./assets/failure.png";
 import Card from "./components/Card";
 import Tooltip from "./components/Tooltip";
 import VideoPlayer from "./components/VideoPlayer";
@@ -142,7 +143,10 @@ function App() {
             </li>
           </ol>
         </div>
-        <VideoPlayer embedLink={FAILURE_YT} />
+        <div>
+          <img width={300} src={failure} alt="failure" />
+          <VideoPlayer embedLink={FAILURE_YT} />
+        </div>
       </div>
       <div className="spacer50" />
       <header className="subheader">Proposed Solutions</header>
