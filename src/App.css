@@ -32,6 +32,10 @@ header {
   height: 10px;
 }
 
+.spacer20 {
+  height: 20px;
+}
+
 .spacer50 {
   height: 50px;
 }
@@ -41,7 +45,14 @@ header {
 }
 
 .subheader {
-  font-size: 28px;
+  font-size: 36px;
+}
+
+.accordion-button.collapsed {
+  background-color: #e7f1ff;
+}
+.accordion-body {
+  background-color: #e6f5de;
 }
 
 /* https://jsfiddle.net/esedic/rLdv29ou/ */
@@ -114,7 +125,7 @@ header {
 }
 
 .components {
-  margin-left: 150px;
+  margin-left: 180px;
 }
 
 .marginLeft10 {

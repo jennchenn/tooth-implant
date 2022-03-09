@@ -2,25 +2,16 @@ export const INTRO =
   "A tooth implant is a prosthetic used to replace damaged or missing teeth. In the United States, around 3 million people have dental implants, with around 500,000 surgeries conducted each year. Dental implants are inserted directly into the patient’s jawbone, and function like a regular tooth. This enables the patient to chew regularly, and restore their smile’s appearance. The success rate of dental implant surgery is generally high, however there can be some complications.";
 
 export const COMPONENT_TOOTH =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat suscipit tincidunt. Vivamus pulvinar nunc erat, quis lacinia purus ultricies quis.";
+  "This is the part of the prosthetic that is visible in a person's mouth. Materials used: (a) metals - gold / alloys for their bionert properties; (b) porcelain / ceramic, zirconia - blend more seamlessly with the rest of the patient's natural teeth.";
 
 export const COMPONENT_ABUTMENT =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat suscipit tincidunt. Vivamus pulvinar nunc erat, quis lacinia purus ultricies quis.";
+  "This component serves as the connection between the implant post and crown. Materials used: titanium or zirconia (typically it will match the material used for the implant post).";
 
 export const COMPONENT_SCREW =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat suscipit tincidunt. Vivamus pulvinar nunc erat, quis lacinia purus ultricies quis.";
-
-export const MATERIALS =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat suscipit tincidunt. Vivamus pulvinar nunc erat, quis lacinia purus ultricies quis. Phasellus malesuada, nunc id vestibulum tempor, turpis leo sagittis quam, vel vehicula risus metus ac felis. Integer varius eleifend leo vitae consequat. Sed tortor ex, lacinia sed fermentum eget, lacinia pharetra risus. Aliquam volutpat accumsan porttitor. ";
-
-export const FAILURE_MODES =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat suscipit tincidunt. Vivamus pulvinar nunc erat, quis lacinia purus ultricies quis. Phasellus malesuada, nunc id vestibulum tempor, turpis leo sagittis quam, vel vehicula risus metus ac felis. Integer varius eleifend leo vitae consequat. Sed tortor ex, lacinia sed fermentum eget, lacinia pharetra risus. Aliquam volutpat accumsan porttitor. ";
+  "This cylindrical screw is installed into the patient's jawbone, serving as the tooth implant's root. Materials used: titanium or zirconia.";
 
 export const SOLUTIONS =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat suscipit tincidunt. Vivamus pulvinar nunc erat, quis lacinia purus ultricies quis. Phasellus malesuada, nunc id vestibulum tempor, turpis leo sagittis quam, vel vehicula risus metus ac felis. Integer varius eleifend leo vitae consequat. Sed tortor ex, lacinia sed fermentum eget, lacinia pharetra risus. Aliquam volutpat accumsan porttitor. ";
-
-export const DENTAL_HYGIENE =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat suscipit tincidunt. Vivamus pulvinar nunc erat, quis lacinia purus ultricies quis. Phasellus malesuada, nunc id vestibulum tempor, turpis leo sagittis quam, vel vehicula risus metus ac felis. Integer varius eleifend leo vitae consequat. Sed tortor ex, lacinia sed fermentum eget, lacinia pharetra risus. Aliquam volutpat accumsan porttitor. ";
+  "Titanium is resistant to corrosion and very biocompatible; zirconia offers good aesthetics. Combining both will allow for benefits of both materials to be apparent in the implant. Adding a coating of hydroxyapatite (HA) can improve osseointegration. Enriching HA with nanoparticles (antibiotics) can help reduce the probability of infection. Finally, removing the abutment can be beneficial in preventing food particles from getting stuck under the crown, thus preventing plaque build-up and infection.";
 
 export const INTRO_YT = "https://www.youtube.com/embed/hDJkFLnmFHU";
 

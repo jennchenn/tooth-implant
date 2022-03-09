@@ -3,7 +3,7 @@ import "./Card.css";
 
 const Card = (props) => {
   return (
-    <div className="bounce card">
+    <div className="custom-card bounce">
       <img className="image" src={props.image} alt={props.imageAlt} />
       <p className="text">{props.description}</p>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import { Accordion } from "react-bootstrap";
 import implant from "./assets/implant.svg";
 import tooth from "./assets/tooth.svg";
 import abutment from "./assets/abutment.svg";
@@ -17,7 +18,6 @@ import {
   COMPONENT_TOOTH,
   COMPONENT_ABUTMENT,
   COMPONENT_SCREW,
-  MATERIALS,
   SOLUTIONS,
   INTRO_YT,
   COMPONENT_YT,
@@ -62,17 +62,17 @@ function App() {
         <VideoPlayer embedLink={INTRO_YT} />
       </div>
       <div className="spacer10" />
-      <header className="subheader">Components</header>
-      <div className="spacer10" />
+      <header className="subheader">Components/Materials/Procedure</header>
+      <div className="spacer50" />
       <div className="flex">
         <VideoPlayer embedLink={COMPONENT_YT} />
         <div className="components">
-          {scrollPosition < 500 && (
+          {scrollPosition < 450 && (
             <div onClick={toggleShowComponents}>
               <img src={implant} alt="implant" />
             </div>
           )}
-          {scrollPosition > 500 && (
+          {scrollPosition > 450 && (
             <div onClick={toggleShowComponents}>
               <div
                 onClick={() =>
@@ -109,7 +109,7 @@ function App() {
                 }
               >
                 <Tooltip
-                  header="IMPLANT BODY"
+                  header="IMPLANT POST"
                   content={COMPONENT_SCREW}
                   direction="right"
                 >
@@ -120,9 +120,46 @@ function App() {
           )}
         </div>
       </div>
-      <div className="spacer50" />
-      <header className="subheader">Materials</header>
-      <p>{MATERIALS}</p>
+      <div className="spacer20" />
+      <Accordion
+        className="accordion"
+        defaultActiveKey={["0", "1", "2", "3", "4"]}
+        alwaysOpen
+      >
+        <Accordion.Item eventKey="0">
+          <Accordion.Header>Step 1</Accordion.Header>
+          <Accordion.Body>
+            Tooth is damaged and requires replacing.
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="1">
+          <Accordion.Header>Step 2</Accordion.Header>
+          <Accordion.Body>
+            Tooth is removed; jaw bone regenerates (if necessary, bone grafting
+            can be done to increase jaw strength) and gum heals.
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="2">
+          <Accordion.Header>Step 3</Accordion.Header>
+          <Accordion.Body>
+            Implant post is installed. Osseointegration must occur between the
+            implant and jaw.
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="3">
+          <Accordion.Header>Step 4</Accordion.Header>
+          <Accordion.Body>
+            Abutment is installed. Gums are given time to heal.
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="4">
+          <Accordion.Header>Step 5</Accordion.Header>
+          <Accordion.Body>
+            Measurements and molds of patient's tooth is taken. Crown is
+            custom-made and installed onto the abutment.
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
       <div className="spacer50" />
       <header className="subheader">Failure Modes</header>
       <div className="flex">
@@ -143,15 +180,17 @@ function App() {
             </li>
           </ol>
         </div>
-        <div>
+        <div className="marginLeft10">
           <img width={300} src={failure} alt="failure" />
           <VideoPlayer embedLink={FAILURE_YT} />
         </div>
       </div>
       <div className="spacer50" />
       <header className="subheader">Proposed Solutions</header>
-      <VideoPlayer embedLink={SOLUTIONS_YT} />
-      <p>{SOLUTIONS}</p>
+      <div className="flex">
+        <VideoPlayer embedLink={SOLUTIONS_YT} />
+        <p className="marginLeft10 leftAlign">{SOLUTIONS}</p>
+      </div>
       <div className="spacer50" />
       <header className="subheader">Dental Hygiene</header>
       <div className="flex">
