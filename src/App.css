@@ -135,3 +135,7 @@ header {
 .marginRight10 {
   margin-right: 10px;
 }
+
+.marginNeg2Rem {
+  margin-left: -2rem;
+}

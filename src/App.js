@@ -18,9 +18,12 @@ import {
   COMPONENT_TOOTH,
   COMPONENT_ABUTMENT,
   COMPONENT_SCREW,
-  SOLUTIONS,
+  SOLUTION_A,
+  SOLUTION_B,
+  SOLUTION_MECH,
   INTRO_YT,
   COMPONENT_YT,
+  OSSEOINTEGRATION,
   HYGIENE_BRUSHING,
   HYGIENE_FLOSSING,
   HYGIENE_DENTIST,
@@ -28,6 +31,7 @@ import {
   FAILURE_YT,
   HYGIENE_YT,
   SOLUTIONS_YT,
+  FAILURE_MODES_LIST,
 } from "./components/Copy.js";
 
 function App() {
@@ -63,6 +67,8 @@ function App() {
       </div>
       <div className="spacer10" />
       <header className="subheader">Components/Materials/Procedure</header>
+      <div className="spacer20" />
+      Hover over each component to learn more.
       <div className="spacer50" />
       <div className="flex">
         <VideoPlayer embedLink={COMPONENT_YT} />
@@ -165,20 +171,10 @@ function App() {
       <div className="flex">
         <div>
           <p className="leftAlign">
-            A number of things could go wrong with a tooth implant:
+            A number of things could go wrong with a tooth implant.
           </p>
-          <ol className="leftAlign">
-            <li>
-              Implant becomes loose: failing osseointegration can be caused by
-              allergic reaction, infection, or premature loading of the implant
-            </li>
-            <li>Abutment unable to fix the crown to the implant</li>
-            <li>Abrasion of the crown</li>
-            <li>
-              Mechanical failure of components (e.g. of the implant due to
-              overloading)
-            </li>
-          </ol>
+          {FAILURE_MODES_LIST}
+          <Card isImage={false} description={OSSEOINTEGRATION} />
         </div>
         <div className="marginLeft10">
           <img width={300} src={failure} alt="failure" />
@@ -189,7 +185,11 @@ function App() {
       <header className="subheader">Proposed Solutions</header>
       <div className="flex">
         <VideoPlayer embedLink={SOLUTIONS_YT} />
-        <p className="marginLeft10 leftAlign">{SOLUTIONS}</p>
+        <ul className="leftAlign">
+          <li>{SOLUTION_A}</li>
+          <li>{SOLUTION_B}</li>
+          <li>{SOLUTION_MECH}</li>
+        </ul>
       </div>
       <div className="spacer50" />
       <header className="subheader">Dental Hygiene</header>
@@ -200,21 +200,25 @@ function App() {
             and maintenance:
           </p>
           <Card
+            isImage
             image={brushing}
             imgAlt="brushing"
             description={HYGIENE_BRUSHING}
           />
           <Card
+            isImage
             image={flossing}
             imgAlt="flossing"
             description={HYGIENE_FLOSSING}
           />
           <Card
+            isImage
             image={dentist}
             imgAlt="dentist"
             description={HYGIENE_DENTIST}
           />
           <Card
+            isImage
             image={mouthguard}
             imgAlt="mouthguard"
             description={HYGIENE_MOUTHGUARD}
@@ -223,6 +227,58 @@ function App() {
         <VideoPlayer className="marginLeft10" embedLink={HYGIENE_YT} />
       </div>
       <div className="spacer50" />
+      <div className="spacer50" />
+      <header className="subheader">Citations</header>
+      <div className="leftAlign">
+        <b>Introduction</b>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.reuters.com/article/us-health-dentalimplants-patient-percept-idUSKCN0PJ2GQ20150709"
+            >
+              Patients can spot trouble with new dental implants
+            </a>
+          </li>
+        </ul>
+        <b>Components/Materials/Procedure</b>
+        <ul>
+          <li>a</li>
+          <li>b</li>
+        </ul>
+        <b>Failure Modes</b>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.nature.com/articles/bdj.2007.74"
+            >
+              Failures in implant dentistry
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://bexleydental.com.au/dental-implants/7-factors-that-cause-implant-failure/"
+            >
+              7 Factors That Cause a Dental Implant Failure
+            </a>
+          </li>
+        </ul>
+        <b>Proposed Solutions</b>
+        <ul>
+          <li>a</li>
+          <li>b</li>
+        </ul>
+        <b>Dental Hygiene</b>
+        <ul>
+          <li>a</li>
+          <li>b</li>
+        </ul>
+      </div>
     </div>
   );
 }

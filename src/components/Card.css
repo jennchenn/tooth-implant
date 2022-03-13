@@ -1,11 +1,12 @@
 .custom-card {
   outline: 2px solid grey;
   border-radius: 70pt;
-  padding: 15px 25px 10px 25px;
+  padding: 20px 25px 10px 25px;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
   background-color: #e6f5de;
+  vertical-align: middle;
 }
 
 .image {
