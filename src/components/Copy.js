@@ -104,15 +104,17 @@ export const OSSEOINTEGRATION = (
   </p>
 );
 
-export const INTRO_YT = "https://www.youtube.com/embed/hDJkFLnmFHU";
+export const INTRO_YT = "https://www.youtube.com/embed/4eNNvtvyFIY";
 
-export const COMPONENT_YT = "https://www.youtube.com/embed/hDJkFLnmFHU";
+export const COMPONENT_YT = "https://www.youtube.com/embed/QR0dMWaSJDk";
 
-export const FAILURE_YT = "https://www.youtube.com/embed/hDJkFLnmFHU";
+export const FAILURE_YT = "https://www.youtube.com/embed/-UvCXEO47bw";
 
-export const SOLUTIONS_YT = "https://www.youtube.com/embed/hDJkFLnmFHU";
+export const SOLUTIONS_YT = "https://www.youtube.com/embed/KaB4I1D174w";
 
-export const HYGIENE_YT = "https://www.youtube.com/embed/hDJkFLnmFHU";
+export const HYGIENE_YT = "https://www.youtube.com/embed/-t7jNLXXCU4";
+
+export const CONCLUSION_YT = "https://www.youtube.com/embed/QG7w6rUZD4s";
 
 export const HYGIENE_BRUSHING =
   "Daily brushing is required to remove food debris and bacteria that accumulates on the tooth surface.";

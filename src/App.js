@@ -32,6 +32,7 @@ import {
   HYGIENE_YT,
   SOLUTIONS_YT,
   FAILURE_MODES_LIST,
+  CONCLUSION_YT,
 } from "./components/Copy.js";
 
 function App() {
@@ -192,7 +193,7 @@ function App() {
         </ul>
       </div>
       <div className="spacer50" />
-      <header className="subheader">Dental Hygiene</header>
+      <header className="subheader">Failure Prevention</header>
       <div className="flex">
         <div className="marginRight10">
           <p className="leftAlign">
@@ -228,6 +229,8 @@ function App() {
       </div>
       <div className="spacer50" />
       <div className="spacer50" />
+      <VideoPlayer embedLink={CONCLUSION_YT} />
+      <div className="spacer50" />
       <header className="subheader">Citations</header>
       <div className="leftAlign">
         <b>Introduction</b>
@@ -244,8 +247,24 @@ function App() {
         </ul>
         <b>Components/Materials/Procedure</b>
         <ul>
-          <li>a</li>
-          <li>b</li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.casadental.com.sg/dental-implant-procedure/"
+            >
+              What is a dental implant procedure?
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://dentaldesigns.com.sg/dental-crowns-what-materials-are-there-and-whats-best-for-you/"
+            >
+              Dental Crowns - What Materials Are There and What's Best For You
+            </a>
+          </li>
         </ul>
         <b>Failure Modes</b>
         <ul>
@@ -270,13 +289,46 @@ function App() {
         </ul>
         <b>Proposed Solutions</b>
         <ul>
-          <li>a</li>
-          <li>b</li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.colgate.com/en-us/oral-health/implants/zirconia-vs-titanium-implants-which-one-is-right-for-you"
+            >
+              Zirconia vs. Titanium Implants: Which One Is Right for You?
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.beverlyhillsladentist.com/blog/are-zirconia-implants-better-than-titanium/"
+            >
+              Zirconia Dental Implants Vs. Titanium Implants
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.kirklandpremierdentistry.com/blog/dental-implants-materials-an-introduction"
+            >
+              Materials Used in Dental Implants: A Comparison
+            </a>
+          </li>
         </ul>
-        <b>Dental Hygiene</b>
+        <b>Failure Prevention</b>
         <ul>
-          <li>a</li>
-          <li>b</li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.badiedental.com/blog/dental-implant-failure-common-causes-and-how-to-prevent-implants-from-failing"
+            >
+              Dental Implant Failure: Common Causes and How to Prevent Implants
+              from Failing
+            </a>
+          </li>
         </ul>
       </div>
     </div>
