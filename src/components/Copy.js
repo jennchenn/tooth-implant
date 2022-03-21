@@ -39,36 +39,42 @@ export const COMPONENT_SCREW = (
 );
 
 export const FAILURE_MODES_LIST = (
-  <ol className="leftAlign">
-    <b className="marginNeg2Rem">Most relevant in practice:</b>
+  <ul className="leftAlign">
+    <b className="marginNeg2Rem">Failing Osseointegration:</b>
+    <li>Main challenge in inserting an implant</li>
     <li>
-      Implant becomes loose: failing osseointegration can be caused by allergic
-      reaction, infection, or premature loading of the implant
+      Concrete reasons for failing osseointegration include allergic reaction,
+      infection, premature loading
     </li>
-    <br />
-    <b className="marginNeg2Rem">Other possible modes of failure:</b>
     <li>
-      Mechanical failure of components (e.g. of the implant due to overloading)
+      Failing osseointegration often leads to further bone loss around the
+      implant
     </li>
-    <li>Abrasion of the crown</li>
-  </ol>
+  </ul>
 );
 
 export const SOLUTION_A = (
   <p>
-    <b>Potential Materials Solution 1: </b>
-    Titanium is resistant to corrosion and very biocompatible; zirconia offers
-    good aesthetics. Combining both will allow for benefits of both materials to
-    be apparent in the implant.
-  </p>
-);
-
-export const SOLUTION_B = (
-  <p>
-    <b>Potential Materials Solution 2: </b>
-    Adding a coating of hydroxyapatite (HA) can improve osseointegration.
-    Enriching HA with nanoparticles (antibiotics) can help reduce the
-    probability of infection. More information can be found{" "}
+    <b>Coating of the implant with Hydroxyapatite (HA).</b>
+    <ul>
+      <li>
+        HA shows excellent interaction with human body due to chemical
+        similarities with human bone
+      </li>
+      <li>
+        HA can even be enriched with antibiotics as nanoparticles to help
+        prevent infections
+      </li>
+      <li>Implant only made from HA not stable enough</li>
+    </ul>
+    <b>Implant underneath the coating: titanium.</b>
+    <ul>
+      <li>Ensures high stability</li>
+      <li>
+        Mechanical properties have proven to fit the needs of a tooth implant
+      </li>
+    </ul>
+    More information can be found{" "}
     <a
       target="_blank"
       href="https://www.himed.com/blog/benefits-hydroxyapatite-coatings-ortho-dental-implants"
@@ -76,16 +82,6 @@ export const SOLUTION_B = (
     >
       here
     </a>
-    .
-  </p>
-);
-
-export const SOLUTION_MECH = (
-  <p>
-    <b>Potential Mechanical Solution: </b>
-    Removing the abutment can be beneficial in preventing food particles from
-    getting stuck under the crown, thus preventing plaque build-up and
-    infection.
   </p>
 );
 

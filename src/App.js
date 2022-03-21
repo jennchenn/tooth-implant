@@ -9,7 +9,9 @@ import brushing from "./assets/brushing.png";
 import flossing from "./assets/flossing.png";
 import mouthguard from "./assets/mouthguard.png";
 import dentist from "./assets/dentist.png";
-import failure from "./assets/failure.png";
+import osseointegration from "./assets/osseointegration.jpg";
+import bone_loss from "./assets/bone_loss.png";
+import ha_coating from "./assets/ha_coating.png";
 import Card from "./components/Card";
 import Tooltip from "./components/Tooltip";
 import VideoPlayer from "./components/VideoPlayer";
@@ -19,8 +21,6 @@ import {
   COMPONENT_ABUTMENT,
   COMPONENT_SCREW,
   SOLUTION_A,
-  SOLUTION_B,
-  SOLUTION_MECH,
   INTRO_YT,
   COMPONENT_YT,
   OSSEOINTEGRATION,
@@ -62,6 +62,11 @@ function App() {
     <div className="App">
       <div className="spacer100" />
       <header className="main-header">Tooth Implant</header>
+      <p className="names">
+        ME4253 | Jennifer Chen, Tristan Leroux Kuhn, Marius Tacke, Ho Lin Ying,
+        Isabel Eva Wleugel
+      </p>
+      <div className="spacer50" />
       <div>
         <p className="leftAlign marginLeft10">{INTRO}</p>
         <VideoPlayer embedLink={INTRO_YT} />
@@ -168,29 +173,45 @@ function App() {
         </Accordion.Item>
       </Accordion>
       <div className="spacer50" />
-      <header className="subheader">Failure Modes</header>
+      <header className="subheader">Failure Mode</header>
       <div className="flex">
         <div>
           <p className="leftAlign">
-            A number of things could go wrong with a tooth implant.
+            There are a number of things that could go wrong with a tooth
+            implant. But the by far most relevant in practice is failing
+            osseointegration.
           </p>
-          {FAILURE_MODES_LIST}
           <Card isImage={false} description={OSSEOINTEGRATION} />
+          {FAILURE_MODES_LIST}
         </div>
         <div className="marginLeft10">
-          <img width={300} src={failure} alt="failure" />
+          <img
+            className="marginBottom5"
+            width={300}
+            src={osseointegration}
+            alt="osseointegration"
+          />
+          <img
+            className="marginBottom5"
+            width={300}
+            src={bone_loss}
+            alt="bone loss"
+          />
           <VideoPlayer embedLink={FAILURE_YT} />
         </div>
       </div>
       <div className="spacer50" />
-      <header className="subheader">Proposed Solutions</header>
+      <header className="subheader">Proposed Solution</header>
       <div className="flex">
-        <VideoPlayer embedLink={SOLUTIONS_YT} />
-        <ul className="leftAlign">
-          <li>{SOLUTION_A}</li>
-          <li>{SOLUTION_B}</li>
-          <li>{SOLUTION_MECH}</li>
-        </ul>
+        <div>
+          <VideoPlayer embedLink={SOLUTIONS_YT} />
+          <img width={300} src={ha_coating} alt="HA coating" />
+        </div>
+        <div className="leftAlign marginLeft20">
+          Our following proposal here aims to improve the osseointegration of
+          tooth implants:
+          {SOLUTION_A}
+        </div>
       </div>
       <div className="spacer50" />
       <header className="subheader">Failure Prevention</header>
@@ -266,7 +287,7 @@ function App() {
             </a>
           </li>
         </ul>
-        <b>Failure Modes</b>
+        <b>Failure Mode</b>
         <ul>
           <li>
             <a
@@ -287,7 +308,7 @@ function App() {
             </a>
           </li>
         </ul>
-        <b>Proposed Solutions</b>
+        <b>Proposed Solution</b>
         <ul>
           <li>
             <a
@@ -314,6 +335,25 @@ function App() {
               href="https://www.kirklandpremierdentistry.com/blog/dental-implants-materials-an-introduction"
             >
               Materials Used in Dental Implants: A Comparison
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.straumann.com/sg/en/dental-professionals/science/literature/roxolid.html"
+            >
+              Straumann Roxolid
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.himed.com/blog/benefits-hydroxyapatite-coatings-ortho-dental-implants"
+            >
+              A Basic Guide to Key Benefits of Hydroxyapatite Coatings for
+              Orthopedic and Dental Implants
             </a>
           </li>
         </ul>

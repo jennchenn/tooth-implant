@@ -132,10 +132,23 @@ header {
   margin-left: 10px;
 }
 
+.marginLeft20 {
+  margin-left: 20px;
+}
+
 .marginRight10 {
   margin-right: 10px;
 }
 
+.marginBottom5 {
+  margin-bottom: 5px;
+}
+
 .marginNeg2Rem {
   margin-left: -2rem;
+}
+
+.names {
+  font-style: italic;
+  font-size: 14px;
 }
