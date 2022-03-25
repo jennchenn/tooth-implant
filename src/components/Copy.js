@@ -106,7 +106,7 @@ export const COMPONENT_YT = "https://www.youtube.com/embed/QR0dMWaSJDk";
 
 export const FAILURE_YT = "https://www.youtube.com/embed/-UvCXEO47bw";
 
-export const SOLUTIONS_YT = "https://www.youtube.com/embed/KaB4I1D174w";
+export const SOLUTIONS_YT = "https://www.youtube.com/embed/WyfPfpArLtc";
 
 export const HYGIENE_YT = "https://www.youtube.com/embed/-t7jNLXXCU4";
 
