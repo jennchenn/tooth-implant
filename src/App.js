@@ -12,9 +12,12 @@ import dentist from "./assets/dentist.png";
 import osseointegration from "./assets/osseointegration.jpg";
 import bone_loss from "./assets/bone_loss.png";
 import ha_coating from "./assets/ha_coating.png";
+import background from "./assets/background.png";
+
 import Card from "./components/Card";
 import Tooltip from "./components/Tooltip";
 import VideoPlayer from "./components/VideoPlayer";
+
 import {
   INTRO,
   COMPONENT_TOOTH,
@@ -59,7 +62,13 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundAttachment: "fixed",
+      }}
+    >
       <div className="spacer100" />
       <header className="main-header">Tooth Implant</header>
       <p className="names">
