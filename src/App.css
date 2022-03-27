@@ -4,7 +4,7 @@
 .App {
   text-align: center;
   padding: 40px;
-  background-color: #d0f0c0;
+  background-color: #daeaeb;
   overflow: auto;
 }
 
@@ -14,6 +14,10 @@ body {
 
 header {
   font-family: "Bungee Inline";
+}
+
+.text-div {
+  background-color: #daeaeb;
 }
 
 .main-header {
@@ -52,7 +56,7 @@ header {
   background-color: #e7f1ff;
 }
 .accordion-body {
-  background-color: #e6f5de;
+  background-color: #daeaeb;
 }
 
 /* https://jsfiddle.net/esedic/rLdv29ou/ */

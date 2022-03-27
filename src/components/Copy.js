@@ -87,6 +87,7 @@ export const SOLUTION_A = (
 
 export const OSSEOINTEGRATION = (
   <p>
+    <br />
     Osseointegration refers to the fusing of living bone with a metal implant.
     Proper osseointegration is required for a permanent bond to form between the
     implant and the patient's jaw. For more information, take a look at{" "}
